@@ -1,7 +1,7 @@
 
 {% set version = environ.get('GIT_DESCRIBE_TAG').lstrip('v') %}
 {% set number = GIT_DESCRIBE_NUMBER %}
-{% set hash_value = environ.get('PKG_HASH') %}
+#{% set hash_value = environ.get('PKG_HASH') %}
 
 package:
   name: flare-pkg
@@ -25,7 +25,7 @@ outputs:
     script: bld.sh   # [not win]
     script: bld.bat  # [win]
     build:
-      string: "h{{ hash_value }}_{{ number }}"
+      string: "h{{ PKG_HASH }}_{{ number }}"
       run_exports:
         - {{ pin_compatible('flare', exact=True) }}
     requirements:
