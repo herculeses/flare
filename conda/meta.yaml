@@ -11,11 +11,11 @@ build:
   number: {{ number }}
 
 about:
-  home: https://github.com/flare-rpc/flare-cpp
+  home: https://github.com/herculeses/flare
   license: Apache License 2
   license_family: APACHE
   license_file: LICENSE
-  summary: A library for c++ based libraries and rpc libraries
+  summary: A library for c++ based libraries
 
 source:
   git_url: ../
