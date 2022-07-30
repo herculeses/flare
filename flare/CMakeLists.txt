@@ -53,7 +53,7 @@ carbin_cc_library(
 )
 
 
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/abel
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/flare
         DESTINATION include
         FILES_MATCHING
         PATTERN "*.h"
