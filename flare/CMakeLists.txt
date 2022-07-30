@@ -57,6 +57,7 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/flare
         DESTINATION include
         FILES_MATCHING
         PATTERN "*.h"
+        PATTERN "*.list"
         )
 
 if (ENABLE_TESTING)
