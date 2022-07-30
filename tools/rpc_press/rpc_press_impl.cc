@@ -192,7 +192,7 @@ namespace pbrpcframework {
             if (_output_json) {
                 std::string response_json;
                 std::string error;
-                if (!json2pb::ProtoMessageToJson(*response, &response_json, &error)) {
+                if (!json2pb::proto_message_to_json(*response, &response_json, &error)) {
                     FLARE_LOG(WARNING) << "Fail to convert to json: " << error;
                 }
                 fprintf(_output_json, "%s\n", response_json.c_str());

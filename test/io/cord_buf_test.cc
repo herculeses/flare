@@ -19,7 +19,7 @@
 #include "test/cord_buf.pb.h"
 #else
 
-#include "cord_buf.pb.h"
+#include "io/cord_buf.pb.h"
 
 #endif   // BAZEL_TEST
 

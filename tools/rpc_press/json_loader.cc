@@ -202,7 +202,7 @@ void JsonLoader::load_messages(
         std::string error;
         google::protobuf::Message* request = _request_prototype->New();
         flare::cord_buf_as_zero_copy_input_stream wrapper(request_json);
-        if (!json2pb::JsonToProtoMessage(&wrapper, request, &error)) {
+        if (!json2pb::json_to_proto_message(&wrapper, request, &error)) {
             FLARE_LOG(WARNING) << "Fail to convert to pb: " << error << ", json=`"
                          << request_json << '\'';
             delete request;

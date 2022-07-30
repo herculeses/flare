@@ -18,6 +18,7 @@ file(GLOB_RECURSE FLARE_FUTURE_SRC "${PROJECT_SOURCE_DIR}/flare/future/*.cc")
 file(GLOB_RECURSE FLARE_DAG_SRC "${PROJECT_SOURCE_DIR}/flare/dag/*.cc")
 file(GLOB_RECURSE FLARE_METRICS_SRC "${PROJECT_SOURCE_DIR}/flare/metrics/*.cc")
 file(GLOB_RECURSE FLARE_FIBER_SRC "${PROJECT_SOURCE_DIR}/flare/fiber/*.cc")
+file(GLOB_RECURSE FLARE_J2B_SRC "${PROJECT_SOURCE_DIR}/flare/json2pb/*.cc")
 
 set(FLARE_SRC
         ${FLARE_BASE_C_SRC}
@@ -38,6 +39,7 @@ set(FLARE_SRC
         ${FLARE_DAG_SRC}
         ${FLARE_METRICS_SRC}
         ${FLARE_FIBER_SRC}
+        ${FLARE_J2B_SRC}
         )
 
 carbin_cc_library(
