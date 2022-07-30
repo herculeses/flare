@@ -23,9 +23,8 @@ source:
 outputs:
   - name: flare
     script: bld.sh   # [not win]
-    script: bld.bat  # [win]
     build:
-      string: "h{{ PKG_HASH }}_{{ number }}"
+      string: h{{ PKG_HASH }}_{{ number }}
       run_exports:
         - {{ pin_compatible('flare', exact=True) }}
     requirements:
