@@ -52,7 +52,6 @@ outputs:
         - sysroot_linux-64=2.17 # [linux]
         - openssl =1.1.1
         - gflags >=2.2.2
-        - leveldb >=1.22
         - protobuf >=3.9.2, <=3.19.1
         - gperftools =2.9.1
     test:
