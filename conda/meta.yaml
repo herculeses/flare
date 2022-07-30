@@ -24,7 +24,7 @@ outputs:
   - name: flare
     script: bld.sh   # [not win]
     build:
-      string: "h{{ PKG_HASH }}_{{ number }}"
+      string: "h{{ hash_value }}_{{ number }}"
       run_exports:
         - {{ pin_compatible('flare', exact=True) }}
     requirements:
