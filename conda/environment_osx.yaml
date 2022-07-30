@@ -2,7 +2,6 @@ name: flare-dev
 channels:
   - conda-forge
   - defaults
-  - flare-rpc
 dependencies:
   - clang # [osx]
   - clangxx #   [osx]

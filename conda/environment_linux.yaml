@@ -2,7 +2,6 @@ name: flare-dev
 channels:
   - conda-forge
   - defaults
-  - flare-rpc
 dependencies:
   - gcc =8.5 # [linux]
   - gxx =8.5 # [linux]
